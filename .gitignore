@@ -1,0 +1,12 @@
+node_modules/
+
+yarn.lock
+
+package-lock.json
+
+dist/
+
+# skip untill complete the script
+commander.js
+
+

@@ -1,0 +1,14 @@
+{
+	"buildFor": [
+		"psd", 
+		"wp", 
+		"html"
+	],
+	"name": "Majara Documentation",
+	"slug": "majara-documentation",
+	"demoUrl": "#",
+	"purchaseUrl": "#",
+	"changelogUrl": "##item-description__changelog",
+	"authorUrl": "https://themeforest.net/user/mohssine-aboutaj/portfolio", 
+	"supportUrl": "https://facebook.com/vive.mouhssine"
+}

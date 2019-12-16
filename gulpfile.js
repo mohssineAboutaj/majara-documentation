@@ -8,16 +8,18 @@ var pkg = require('./package.json'),
 	autoprefixer = require('gulp-autoprefixer'),
 	replace = require('gulp-replace-task');
 
-// wp, html, psd
-var build_for = 'for_' + 'psd';
+const config = require('./config.json')
 
-var name = "Leedo",
-	slug = "leedo",
-	demoUrl = "#",
-	purchaseUrl = "#",
-	changelogUrl = "##item-description__changelog",
-	authorUrl = "https://themeforest.net/user/vlthemes/portfolio",
-	supportUrl= "http://vlthemes.ticksy.com/";
+// wp, html, psd
+var build_for = 'for_' + config.buildFor[0];
+
+var name = config.name,
+		slug = config.slug,
+		demoUrl = config.demoUrl,
+		purchaseUrl = config.purchaseUrl,
+		changelogUrl = config.changelogUrl,
+		authorUrl = config.authorUrl,
+		supportUrl = config.supportUrl;
 
 gulp.task('stylus', function() {
 	return gulp.src('public/css/*.styl')

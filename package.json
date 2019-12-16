@@ -1,10 +1,11 @@
 {
   "name": "themedocs",
-  "author": "VLThemes",
+  "author": "Mohssine Aboutaj",
   "version": "1.0.0",
   "license": "GPLv3",
   "scripts": {
-    "start": "gulp build",
+    "start": "node commander.js && npm run build",
+    "build": "gulp build",
     "watch": "gulp watch"
   },
   "dependencies": {
@@ -16,5 +17,8 @@
     "gulp-replace-task": "^0.11.0",
     "gulp-stylus": "^2.7.0",
     "gulp-uglify": "^3.0.0"
+  },
+  "devDependencies": {
+    "inquirer": "^7.0.1"
   }
 }
